@@ -2,16 +2,10 @@
 # The 3 most recent are shown; all appear on /allnews.
 # Each entry needs: date, headline
 - date: June, 2026
-  headline: "Joined Inria (Wimmics team, Sophia Antipolis) as a postdoctoral researcher on secure federated query building with LLMs"
-
-- date: June, 2025
-  headline: "LLM4Schema.org published in the Semantic Web Journal"
+  headline: "Postdoctoral Researcher, Inria, Wimmics team: Natural Language Based Secure Federated Query Building"
 
 - date: November, 2024
-  headline: "Completed my PhD at Nantes University, then joined JusMundi as an applied research and development engineer"
+  headline: "Applied Research and Development Engineer, JusMundi"
 
-- date: May, 2024
-  headline: "Presented FedUP at The Web Conference in Singapore"
-
-- date: November, 2023
-  headline: "Three papers at ISWC 2023 in Athens: FedShop, RAW-JENA and Schema.org: How is it used?"
+- date: June, 2025
+  headline: "LLM4SchemaOrg: Generating Schema.org Markups with Large Language Models, Semantic Web Journal"

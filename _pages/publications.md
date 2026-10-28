@@ -16,4 +16,14 @@ permalink: /publications/
 <h2>Refereed Conference Proceedings</h2>
 
 {% bibliography --query @inproceedings %}
+
+<h2>Thesis</h2>
+
+{% bibliography --query @phdthesis %}
+
+<h2>Other</h2>
+
+{% bibliography --query @misc %}
+
+{% bibliography --query @techreport %}
 </div>
