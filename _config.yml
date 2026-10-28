@@ -4,7 +4,7 @@
 name: "Minh-Hoang Dang"
 title: "Postdoctoral Researcher"
 institution: "Inria, Wimmics team"
-email: minhhoang.dang97@gmail.com
+email: minh-hoang.dang@inria.fr
 photo: headshot.jpg  # place your photo in images/
 
 # ============================================================
@@ -17,7 +17,7 @@ links:
   orcid: ""
   twitter: ""
   linkedin: "https://linkedin.com/in/minhhoangdang"
-  cv: "papers/cv.pdf"
+  cv: ""
 
 # ============================================================
 # STEP 3: Site Settings
