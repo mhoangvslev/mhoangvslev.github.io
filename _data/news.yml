@@ -1,0 +1,17 @@
+# News items shown on the home page sidebar.
+# The 3 most recent are shown; all appear on /allnews.
+# Each entry needs: date, headline
+- date: June, 2026
+  headline: "Joined Inria (Wimmics team, Sophia Antipolis) as a postdoctoral researcher on secure federated query building with LLMs"
+
+- date: June, 2025
+  headline: "LLM4Schema.org published in the Semantic Web Journal"
+
+- date: November, 2024
+  headline: "Completed my PhD at Nantes University, then joined JusMundi as an applied research and development engineer"
+
+- date: May, 2024
+  headline: "Presented FedUP at The Web Conference in Singapore"
+
+- date: November, 2023
+  headline: "Three papers at ISWC 2023 in Athens: FedShop, RAW-JENA and Schema.org: How is it used?"

@@ -1,0 +1,67 @@
+@comment{Author lists are abbreviated with "and others": replace each with the full BibTeX author list, and add doi / url / file fields to get PDF, DOI and Link buttons.}
+
+@article{dang2025llm4schema,
+  selected={true},
+  title={{LLM4Schema.org}: Generating {Schema.org} Markups with Large Language Models},
+  author={Dang, Minh-Hoang and others},
+  journal={Semantic Web Journal},
+  year={2025},
+  month={jun},
+  abstract={Generating a Schema.org markup is easy using LLMs, but evaluating its quality is hard. This paper introduces LLM4Schema.org, a novel approach to evaluate the performance of LLMs in generating Schema.org markups, mixing both deterministic and LLM-as-judge metrics. Our findings indicate that LLMs should not be used out-of-the-box for generating Schema.org markups, as they often produce invalid, non-factual, or non-compliant markups.},
+}
+
+@inproceedings{dang2024fedup,
+  selected={true},
+  title={{FedUP}: Querying Large-Scale Federations of {SPARQL} Endpoints},
+  author={Dang, Minh-Hoang and others},
+  booktitle={International World Wide Web Conference (WWW), Singapore},
+  year={2024},
+  month={may},
+  abstract={The FedShop benchmark shows that existing federation query engines (FQEs) perform poorly when the number of endpoints exceeds a few dozen. In federated querying settings, most of the query processing time is wasted evaluating combinations of endpoints that return no results. We propose FedUP, a new FQE that builds result-aware plans using quotient summaries, resulting in 1-3 orders of magnitude improvement in execution time.},
+}
+
+@inproceedings{dang2023fedshop,
+  selected={true},
+  title={{FedShop}: A Benchmark for Testing the Scalability of {SPARQL} Federation Engines},
+  author={Dang, Minh-Hoang and others},
+  booktitle={International Semantic Web Conference (ISWC), Athens, Greece},
+  year={2023},
+  month={nov},
+  abstract={Existing benchmarks test the scalability of federation query engines (FQEs) based on data volume but use a limited number of endpoints. Our new benchmark reveals scalability challenges for current FQEs, highlighting issues in source selection and query decomposition.},
+}
+
+@inproceedings{dang2023rawjena,
+  title={{RAW-JENA}: Approximate Query Processing for {SPARQL} Endpoints},
+  author={Dang, Minh-Hoang and others},
+  booktitle={International Semantic Web Conference (ISWC), Athens, Greece},
+  year={2023},
+  month={nov},
+  abstract={Existing SPARQL endpoints enforce a fair-use policy, capping query processing time (60s on Wikidata). This limits their usability in exploratory queries, large-scale statistics, embeddings, etc. We present RAW-JENA, an extension of Apache Jena that supports sampling-based approximate query processing for conjunctive SPARQL queries relying on random walks, delivering partial random results and cardinality estimates in a pay-as-you-go fashion.},
+}
+
+@inproceedings{dang2023schemaorg,
+  title={{Schema.org}: How is it used?},
+  author={Dang, Minh-Hoang and others},
+  booktitle={International Semantic Web Conference (ISWC), Athens, Greece},
+  year={2023},
+  month={nov},
+  abstract={Due to the vast and diverse nature of the contributed annotations, it is not easy to understand the widespread use of Schema.org. Using characteristic sets, we established a comprehensive observatory for Schema.org annotations, visually presenting the most frequently used classes and commonly used combinations of properties per class.},
+}
+
+@inproceedings{dang2023joinordering,
+  title={Join Ordering of {SPARQL} Property Path Queries},
+  author={Dang, Minh-Hoang and others},
+  booktitle={Extended Semantic Web Conference (ESWC), Hersonissos, Greece},
+  year={2023},
+  month={may},
+  abstract={SPARQL property path queries provide a succinct way to write complex navigational queries over RDF knowledge graphs, but their evaluation remains difficult due to transitive closures. We propose a novel query optimizer that uses a cost model and a sampling-based cardinality estimator to optimize the join order of property path queries with UNION and FILTER. Total execution time is 14x faster than BlazeGraph and 14% faster than Virtuoso on the Wikidata Query Benchmark.},
+}
+
+@inproceedings{dang2022prompts,
+  title={Improving Language Model Predictions via Prompts Enriched with Knowledge Graphs},
+  author={Dang, Minh-Hoang and others},
+  booktitle={Deep Learning for Knowledge Graphs Workshop at ISWC, Bertinoro, Italy},
+  year={2022},
+  month={sep},
+  abstract={Un-tuned pre-trained language models are believed to perform poorly on question answering. We argue that these models already know a lot: by improving the prompt, we can improve performance. We use the Wikidata knowledge graph to augment the prompt and improve BERT/RoBERTa base models on a movie question-answering task.},
+}
