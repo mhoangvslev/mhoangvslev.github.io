@@ -4,15 +4,15 @@ Personal academic website of [Minh-Hoang Dang](https://mhoangvslev.github.io), b
 
 ## Structure
 
-| What | Where |
-| --- | --- |
-| Site settings, name, URL | `_config.yml` |
-| About page and bio | `_pages/about.md` |
-| Social links | `_data/socials.yml` |
-| Publications (BibTeX) | `_bibliography/papers.bib` |
-| CV (education, experience, skills...) | `_data/cv.yml` |
-| Projects | `_projects/` |
-| Photo | `assets/img/prof_pic.jpg` |
+| What                                  | Where                      |
+| ------------------------------------- | -------------------------- |
+| Site settings, name, URL              | `_config.yml`              |
+| About page and bio                    | `_pages/about.md`          |
+| Social links                          | `_data/socials.yml`        |
+| Publications (BibTeX)                 | `_bibliography/papers.bib` |
+| CV (education, experience, skills...) | `_data/cv.yml`             |
+| Projects                              | `_projects/`               |
+| Photo                                 | `assets/img/prof_pic.jpg`  |
 
 ## Run locally
 
