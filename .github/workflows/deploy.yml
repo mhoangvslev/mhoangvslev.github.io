@@ -1,71 +1,108 @@
-name: Build and Deploy
+name: Deploy site
 
 on:
   push:
-    branches: [source]
+    branches:
+      - master
+      - main
+    paths:
+      - "assets/**"
+      - "**.bib"
+      - "**.html"
+      - "**.js"
+      - "**.liquid"
+      - "**/*.md"
+      - "**.yml"
+      - "Gemfile"
+      - "Gemfile.lock"
+      - "!.github/workflows/axe.yml"
+      - "!.github/workflows/broken-links.yml"
+      - "!.github/workflows/deploy-docker-tag.yml"
+      - "!.github/workflows/deploy-image.yml"
+      - "!.github/workflows/docker-slim.yml"
+      - "!.github/workflows/lighthouse-badger.yml"
+      - "!.github/workflows/prettier.yml"
+      - "!lighthouse_results/**"
+      - "!docs/CONTRIBUTING.md"
+      - "!docs/CUSTOMIZE.md"
+      - "!docs/FAQ.md"
+      - "!docs/INSTALL.md"
+      - "!README.md"
+  pull_request:
+    branches:
+      - master
+      - main
+    paths:
+      - "assets/**"
+      - "**.bib"
+      - "**.html"
+      - "**.js"
+      - "**.liquid"
+      - "**/*.md"
+      - "**.yml"
+      - "Gemfile"
+      - "Gemfile.lock"
+      - "!.github/workflows/axe.yml"
+      - "!.github/workflows/broken-links.yml"
+      - "!.github/workflows/deploy-docker-tag.yml"
+      - "!.github/workflows/deploy-image.yml"
+      - "!.github/workflows/docker-slim.yml"
+      - "!.github/workflows/lighthouse-badger.yml"
+      - "!.github/workflows/prettier.yml"
+      - "!lighthouse_results/**"
+      - "!docs/CONTRIBUTING.md"
+      - "!docs/CUSTOMIZE.md"
+      - "!docs/FAQ.md"
+      - "!docs/INSTALL.md"
+      - "!README.md"
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  contents: write
 
 jobs:
-  build:
+  deploy:
+    # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout 🛎️
         uses: actions/checkout@v7
-
-      - name: Setup Ruby
+      - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '4.0'
+          ruby-version: "3.3.5"
           bundler-cache: true
-
-      # Fails with a clear message if Pages is not yet enabled for this repo.
-      # One-time fix: Settings > Pages > Source > "GitHub Actions".
-      - name: Configure Pages
-        id: pages
-        uses: actions/configure-pages@v6
-
-      # url and baseurl come from the Pages settings, so user sites
-      # (you.github.io), project sites (you.github.io/repo), and custom
-      # domains all work without editing _config.yml.
-      - name: Build site
+      - name: Setup Python 🐍
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+          cache: "pip" # caching pip dependencies
+      - name: Setup Node 🧰
+        uses: actions/setup-node@v7
+        with:
+          node-version: "20"
+          cache: "npm"
+      - name: Install JS deps 📦
+        run: npm ci
+      - name: Update _config.yml ⚙️
+        uses: fjogeleit/yaml-update-action@dffe9a5223d84653c13374032382f6bb5de8e5ef # v0.17.0
+        with:
+          commitChange: false
+          valueFile: "_config.yml"
+          propertyPath: "giscus.repo"
+          value: ${{ github.repository }}
+      - name: Install and Build 🔧
         run: |
-          printf 'url: "%s"\nbaseurl: "%s"\n' "$PAGES_ORIGIN" "$PAGES_BASE_PATH" > _config_pages.yml
-          bundle exec jekyll build --config _config.yml,_config_pages.yml
-        env:
-          JEKYLL_ENV: production
-          PAGES_ORIGIN: ${{ steps.pages.outputs.origin }}
-          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
-
-      # Safari and older browsers cannot use the SVG favicon; rasterize it so
-      # favicon.ico and the iOS home-screen icon match the generated SVG.
-      - name: Rasterize favicon
+          sudo apt-get update && sudo apt-get install -y imagemagick
+          pip3 install --upgrade nbconvert
+          export JEKYLL_ENV=production
+          bundle exec jekyll build
+      - name: Purge unused CSS 🧹
         run: |
-          sudo apt-get update -qq >/dev/null && sudo apt-get install -y -qq librsvg2-bin imagemagick >/dev/null
-          rsvg-convert -w 180 -h 180 _site/favicon.svg -o _site/apple-touch-icon.png
-          rsvg-convert -w 32  -h 32  _site/favicon.svg -o _site/favicon-32.png
-          rsvg-convert -w 16  -h 16  _site/favicon.svg -o _site/favicon-16.png
-          convert _site/favicon-16.png _site/favicon-32.png _site/favicon.ico
-          rm _site/favicon-16.png _site/favicon-32.png
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v5
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
+          npm install -g purgecss
+          purgecss -c purgecss.config.js
+      - name: Deploy 🚀
+        if: github.event_name != 'pull_request'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: _site

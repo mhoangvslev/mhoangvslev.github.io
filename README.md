@@ -1,629 +1,332 @@
-# A website template for academics
+# al-folio
 
-<p align="center">
-  <img src="images/screenshots/home-hero.webp" alt="Home page in light and dark mode" width="900">
-</p>
+<div align="center">
 
-<p align="center">
-  <strong>A beautiful, production-ready Jekyll website for academics and research groups.</strong><br>
-  Use the template. Fill in your info. Publish.
-</p>
+[![Preview](readme_preview/al-folio-preview.png)](https://alshedivat.github.io/al-folio/)
 
-<p align="center">
-  <a href="https://github.com/sbryngelson/academic-website-template/actions/workflows/deploy.yml"><img src="https://github.com/sbryngelson/academic-website-template/actions/workflows/deploy.yml/badge.svg" alt="Build and Deploy"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license"></a>
-</p>
+**A simple, clean, and responsive [Jekyll](https://jekyllrb.com/) starter for academic websites.**
 
-<h3 align="center">
-  <a href="https://sbryngelson.github.io/academic-website-template/">See the live demo &rarr;</a>
-</h3>
-
-<p align="center">
-  If this template saves you time, please <a href="https://github.com/sbryngelson/academic-website-template/stargazers">star the repo</a>. Stars are how other academics find it.
-</p>
-
-<p align="center">
-  <a href="#quick-start">Quick Start</a> &middot;
-  <a href="#features">Features</a> &middot;
-  <a href="#customization">Customization</a> &middot;
-  <a href="#publications">Publications</a> &middot;
-  <a href="#hosting">Hosting</a>
-</p>
-
-### Used by 180+ academics and research groups
-
-<a href="https://i-vesseg.github.io/" target="_blank">★</a>
-<a href="https://bczheng.com/" target="_blank">★</a>
-<a href="https://bazilinskyy.github.io/" target="_blank">★</a>
-<a href="https://www.coreytcallaghan.com/" target="_blank">★</a>
-<a href="https://minseoksong.github.io/" target="_blank">★</a>
-<a href="https://acme-group-cmu.github.io/" target="_blank">★</a>
-<a href="https://adisun94.github.io/" target="_blank">★</a>
-<a href="https://comp-physics.group" target="_blank">★</a>
-<a href="https://spike.doc.ic.ac.uk/" target="_blank">★</a>
-<a href="https://mashadab.github.io/" target="_blank">★</a>
-<a href="https://home.iitk.ac.in/~lalit/" target="_blank">★</a>
-<a href="https://ethan-pickering.github.io/" target="_blank">★</a>
-<a href="https://pedro-dm-gomes.github.io/" target="_blank">★</a>
-<a href="https://3tbk.github.io/3tbk/" target="_blank">★</a>
-<a href="https://felipesua.github.io/" target="_blank">★</a>
-<a href="https://shivvrat.github.io/" target="_blank">★</a>
-<a href="https://ritamraha.github.io/" target="_blank">★</a>
-<a href="https://matsesseldeurs.github.io/" target="_blank">★</a>
-<a href="https://michelleblom.github.io/" target="_blank">★</a>
-<a href="https://sahatulika15.github.io" target="_blank">★</a>
-<a href="https://mzhanglab.github.io" target="_blank">★</a>
-<a href="https://soar-lab.github.io" target="_blank">★</a>
-<a href="https://azharghafoor.github.io/" target="_blank">★</a>
-<a href="https://hyunwoo.info/" target="_blank">★</a>
-<a href="https://computervision0.github.io/" target="_blank">★</a>
-<a href="https://vaibhavb007.github.io/" target="_blank">★</a>
-<a href="https://gabry993.github.io/" target="_blank">★</a>
-<a href="https://shantnuu.github.io/" target="_blank">★</a>
-<a href="https://efstathia-soufleri.github.io/" target="_blank">★</a>
-<a href="https://zchoffin.github.io/" target="_blank">★</a>
-<a href="https://albertgassol1.github.io/" target="_blank">★</a>
-<a href="https://seanpark05.github.io/" target="_blank">★</a>
-<a href="https://miki998.github.io/" target="_blank">★</a>
-<a href="https://wilfonba.github.io/" target="_blank">★</a>
-<a href="https://mvmacfarlane.github.io/" target="_blank">★</a>
-<a href="https://saharnaz.org/" target="_blank">★</a>
-<a href="https://www.isnicholas.com/" target="_blank">★</a>
-<a href="https://zhiyu7.github.io/" target="_blank">★</a>
-<a href="https://awen-li.github.io/" target="_blank">★</a>
-<a href="https://yukiiwong.github.io/" target="_blank">★</a>
-<a href="https://joeyleehk.github.io/" target="_blank">★</a>
-<a href="https://fabayocbocjr.github.io/" target="_blank">★</a>
-<a href="https://adityanandy.github.io/" target="_blank">★</a>
-<a href="https://jlastro.github.io/" target="_blank">★</a>
-<a href="https://xia-hu.github.io/" target="_blank">★</a>
-<a href="https://p-bajpai.github.io/" target="_blank">★</a>
-<a href="https://AdityaSinghDevs.github.io/" target="_blank">★</a>
-<a href="https://aipsita.github.io/" target="_blank">★</a>
-<a href="https://anedelin.github.io/" target="_blank">★</a>
-<a href="https://avibagchi.github.io/" target="_blank">★</a>
-<a href="https://binbin-xie.github.io/" target="_blank">★</a>
-<a href="https://BiomedLabUGgt.github.io/" target="_blank">★</a>
-<a href="https://emilyvansyoc.github.io/" target="_blank">★</a>
-<a href="https://Erd-ling.github.io/" target="_blank">★</a>
-<a href="https://estimation-control-learning-laboratory.github.io/" target="_blank">★</a>
-<a href="https://EthanJ666.github.io/" target="_blank">★</a>
-<a href="https://f-farhan.github.io/" target="_blank">★</a>
-<a href="https://gcg-helsinki.github.io/" target="_blank">★</a>
-<a href="https://Grupo-MATE.github.io/" target="_blank">★</a>
-<a href="https://guancai.github.io/" target="_blank">★</a>
-<a href="https://haochey.github.io/" target="_blank">★</a>
-<a href="https://hrositi.github.io/" target="_blank">★</a>
-<a href="https://Khris-VI.github.io/" target="_blank">★</a>
-<a href="https://KieuTruong.github.io/" target="_blank">★</a>
-<a href="https://kwakkyoleen.github.io/" target="_blank">★</a>
-<a href="https://martinezach.github.io/" target="_blank">★</a>
-<a href="https://msstate-athena.github.io/" target="_blank">★</a>
-<a href="https://mvanwyngarden.github.io/" target="_blank">★</a>
-<a href="https://Naeele.github.io/" target="_blank">★</a>
-<a href="https://NickJi98.github.io/" target="_blank">★</a>
-<a href="https://qianhuimen.github.io/" target="_blank">★</a>
-<a href="https://saorisakaue.github.io/" target="_blank">★</a>
-<a href="https://victorolaiya.github.io/" target="_blank">★</a>
-<a href="https://wjin4.github.io/" target="_blank">★</a>
-<a href="https://yasserfarouk.github.io/" target="_blank">★</a>
-<a href="https://yuminglab.github.io/" target="_blank">★</a>
-<a href="https://zeyuD.github.io/" target="_blank">★</a>
-<a href="https://nderus.github.io" target="_blank">★</a>
-<a href="https://1781950192.github.io/zjgsu.lch/" target="_blank">★</a>
-<a href="https://9laurence.github.io/" target="_blank">★</a>
-<a href="https://abhilekhborah.github.io/abhilekhborah123.github.io/" target="_blank">★</a>
-<a href="https://AGB-Shargh.github.io/" target="_blank">★</a>
-<a href="https://aidanrm.com/" target="_blank">★</a>
-<a href="https://albertopadovan.github.io/apgroup/" target="_blank">★</a>
-<a href="https://ali-ayati.com/" target="_blank">★</a>
-<a href="https://AliciaNegre.github.io/" target="_blank">★</a>
-<a href="https://Amanita19.github.io/" target="_blank">★</a>
-<a href="https://aniksh.github.io/" target="_blank">★</a>
-<a href="https://AyahHelal.github.io/" target="_blank">★</a>
-<a href="https://b-mahato.github.io/" target="_blank">★</a>
-<a href="https://bcolmey.github.io/" target="_blank">★</a>
-<a href="https://braden-kennedy.github.io/bkennedyportfolio/" target="_blank">★</a>
-<a href="https://bwangair.github.io/" target="_blank">★</a>
-<a href="https://C-3PE.github.io/" target="_blank">★</a>
-<a href="https://carmenreal.github.io/" target="_blank">★</a>
-<a href="https://chlookaburra.github.io/" target="_blank">★</a>
-<a href="https://chris-hzc.github.io/" target="_blank">★</a>
-<a href="https://chz05.github.io/" target="_blank">★</a>
-<a href="https://DanielEWeeks.github.io/Daniel_E_Weeks/" target="_blank">★</a>
-<a href="https://www.danieljvickers.com/" target="_blank">★</a>
-<a href="https://deepaktatachar.github.io/" target="_blank">★</a>
-<a href="https://DGonzalezPicos.github.io/" target="_blank">★</a>
-<a href="https://dmebr.com/" target="_blank">★</a>
-<a href="https://DominikSlomma.github.io/" target="_blank">★</a>
-<a href="https://ecsicl.github.io/" target="_blank">★</a>
-<a href="https://egl49.github.io/" target="_blank">★</a>
-<a href="https://eletoo.github.io/" target="_blank">★</a>
-<a href="https://ericmanley.github.io/" target="_blank">★</a>
-<a href="https://Fanerst.github.io/" target="_blank">★</a>
-<a href="https://www.fintanhealy.co.uk/" target="_blank">★</a>
-<a href="https://flampouris.com/" target="_blank">★</a>
-<a href="https://gabriel-correa.com/" target="_blank">★</a>
-<a href="https://Gaby-253.github.io/" target="_blank">★</a>
-<a href="https://HaiboLi99.github.io/" target="_blank">★</a>
-<a href="https://HC-teemo.github.io/grapheco.github.io/" target="_blank">★</a>
-<a href="https://hcfun.github.io/" target="_blank">★</a>
-<a href="https://hikari-NYU.github.io/" target="_blank">★</a>
-<a href="https://hildaadwubiosei.github.io/hildaosei/" target="_blank">★</a>
-<a href="https://IlianaXn.github.io/" target="_blank">★</a>
-<a href="https://jadededaj.github.io/" target="_blank">★</a>
-<a href="https://jessestraat.github.io/" target="_blank">★</a>
-<a href="https://jiaenwu.github.io/jiaenwu/" target="_blank">★</a>
-<a href="https://JialiangTang.github.io/homepage/" target="_blank">★</a>
-<a href="https://Jill0099.github.io/" target="_blank">★</a>
-<a href="https://JohanSGV.github.io/" target="_blank">★</a>
-<a href="https://juang.id/" target="_blank">★</a>
-<a href="https://julianklix.github.io/" target="_blank">★</a>
-<a href="https://Julien-Co.github.io/" target="_blank">★</a>
-<a href="https://JWM-CU.github.io/mmc3/" target="_blank">★</a>
-<a href="https://kacf24.github.io/" target="_blank">★</a>
-<a href="https://kalfton.github.io/" target="_blank">★</a>
-<a href="https://Kilomaroon.github.io/" target="_blank">★</a>
-<a href="https://LHCb-Cincinnati.github.io/" target="_blank">★</a>
-<a href="https://lorenzoghiro.com/" target="_blank">★</a>
-<a href="https://Lspor.github.io/Lauren_Spor/" target="_blank">★</a>
-<a href="https://lucasSaavedra123.github.io/" target="_blank">★</a>
-<a href="https://lukasztychoniec.github.io/" target="_blank">★</a>
-<a href="https://majinwakeup.github.io/" target="_blank">★</a>
-<a href="https://margaretmurakami.github.io/" target="_blank">★</a>
-<a href="https://MaxDYF.github.io/" target="_blank">★</a>
-<a href="https://mekhiito.github.io/" target="_blank">★</a>
-<a href="https://mgoldberg10.github.io/" target="_blank">★</a>
-<a href="https://MosesStewart.github.io/" target="_blank">★</a>
-<a href="https://mxyao.github.io/" target="_blank">★</a>
-<a href="https://NaokiItsui.github.io/" target="_blank">★</a>
-<a href="https://owenarden.github.io/home/" target="_blank">★</a>
-<a href="https://pinakisar.github.io/" target="_blank">★</a>
-<a href="https://pponzio.github.io/" target="_blank">★</a>
-<a href="https://www.quant-minds.com/" target="_blank">★</a>
-<a href="https://Qxjyqzw.github.io/" target="_blank">★</a>
-<a href="https://rajmadan96.github.io/website/" target="_blank">★</a>
-<a href="https://rgrinnovatellc.github.io/" target="_blank">★</a>
-<a href="https://richardhchen.com/" target="_blank">★</a>
-<a href="https://riqx-code.github.io/rithi/" target="_blank">★</a>
-<a href="https://riveralab.org/" target="_blank">★</a>
-<a href="https://robotcodelab.com/" target="_blank">★</a>
-<a href="https://rosalab.github.io/" target="_blank">★</a>
-<a href="https://s-shailja.github.io/website/" target="_blank">★</a>
-<a href="https://saauan.github.io/" target="_blank">★</a>
-<a href="https://Saif2098.github.io/" target="_blank">★</a>
-<a href="https://SarveshVGharat.github.io/" target="_blank">★</a>
-<a href="https://sliao7.github.io/home/" target="_blank">★</a>
-<a href="https://sms-lab.github.io/" target="_blank">★</a>
-<a href="https://snapcoalition.org/" target="_blank">★</a>
-<a href="https://speciation-genomics.github.io/" target="_blank">★</a>
-<a href="https://stephanbickel.com/" target="_blank">★</a>
-<a href="https://suruoxin.github.io/" target="_blank">★</a>
-<a href="https://sxswz213.github.io/" target="_blank">★</a>
-<a href="https://t3humphries.github.io/" target="_blank">★</a>
-<a href="https://tadeuszrudek.github.io/" target="_blank">★</a>
-<a href="https://Takumi-Kijima.github.io/" target="_blank">★</a>
-<a href="https://tic173.github.io/TianyiChu/" target="_blank">★</a>
-<a href="https://umbertomuratori.github.io/" target="_blank">★</a>
-<a href="https://USTC-Xu-Group.github.io/" target="_blank">★</a>
-<a href="https://vinkoyang.github.io/VinkoYang/" target="_blank">★</a>
-<a href="https://voilalab.github.io/" target="_blank">★</a>
-<a href="https://wakandaai.github.io/" target="_blank">★</a>
-<a href="https://WenbinLuomath.github.io/wenbinluo/" target="_blank">★</a>
-<a href="https://xietian1.github.io/snms-lab-web/" target="_blank">★</a>
-<a href="https://xiuquan0418.github.io/" target="_blank">★</a>
-<a href="https://xuguangning1218.github.io/" target="_blank">★</a>
-<a href="https://xzzhouxi.github.io/xzzhouxi.github.com/" target="_blank">★</a>
-<a href="https://YongPeng25.github.io/WaveLens/" target="_blank">★</a>
-<a href="https://YueGroup.github.io/" target="_blank">★</a>
-<a href="https://zcy26.github.io/" target="_blank">★</a>
-
-Each star is a live site built from this template. The list is re-checked now and then; sites that go offline or move to another template are removed.
-
-__Using this template? Share your site and I'll add it here, and consider starring the repo so others can find it.__
+_In `v1.x`, al-folio is a **thin starter, not a theme**: the runtime ships as independently versioned plugin gems, so you pick up fixes and features by bumping a pinned version in your `Gemfile` instead of merging theme internals into your site._
 
 ---
+
+[![deploy](https://github.com/alshedivat/al-folio/actions/workflows/deploy.yml/badge.svg)](https://github.com/alshedivat/al-folio/actions/workflows/deploy.yml)
+[![Maintainers](https://img.shields.io/badge/maintainers-4-success.svg)](#maintainers)
+[![GitHub contributors](https://img.shields.io/github/contributors/alshedivat/al-folio.svg)](https://github.com/alshedivat/al-folio/graphs/contributors/)
+
+[![Docker Image Version](https://img.shields.io/docker/v/amirpourmand/al-folio?sort=semver&label=docker%20image&color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
+[![Docker Image Size](https://img.shields.io/docker/image-size/amirpourmand/al-folio?sort=date&label=docker%20image%20size&color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/amirpourmand/al-folio?color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
+
+[![GitHub release](https://img.shields.io/github/v/release/alshedivat/al-folio)](https://github.com/alshedivat/al-folio/releases/latest)
+[![GitHub license](https://img.shields.io/github/license/alshedivat/al-folio?color=blue)](https://github.com/alshedivat/al-folio/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/alshedivat/al-folio)](https://github.com/alshedivat/al-folio/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/alshedivat/al-folio)](https://github.com/alshedivat/al-folio/fork)
+
+[![Code Wiki](https://img.shields.io/badge/Code_Wiki-ask_about_repo-blue?logo=googlegemini)](https://codewiki.google/github.com/alshedivat/al-folio)
+[![DeepWiki](https://img.shields.io/badge/DeepWiki-ask_about_repo-lightcyan)](https://deepwiki.com/alshedivat/al-folio)
+
+</div>
+
+## Getting started
+
+**⚠️ Important: Use "Use this template" (not fork)**
+
+When creating your own website with al-folio, you have two options:
+
+- ✅ **Recommended:** Click "[Use this template](https://github.com/new?template_name=al-folio&template_owner=alshedivat)" – This creates a clean copy that is independent from the main al-folio repository. Changes you make to your site won't be accidentally submitted to al-folio as pull requests.
+- ❌ **Not recommended:** Forking the repository – This keeps a link to the main al-folio repo, making it easy to accidentally submit your personal site changes as contributions to our project.
+
+**If you already forked:** Don't worry! You can still work with your fork normally. Just make sure to:
+
+1. Make changes on a dedicated branch (e.g., `my-site-updates`)
+2. When pushing changes, always verify you're pushing to **your own repository**, not the main al-folio repository
+3. Never create pull requests to `alshedivat/al-folio` unless you're intentionally contributing improvements that benefit all users
+
+For quick setup, see [docs/QUICKSTART.md](docs/QUICKSTART.md).
+
+Want to learn more about Jekyll? Check out [this tutorial](https://www.taniarascia.com/make-a-static-website-with-jekyll/). Why Jekyll? Read [Andrej Karpathy's blog post](https://karpathy.github.io/2014/07/01/switching-to-jekyll/)! Why write a blog? Read [Rachel Thomas blog post](https://medium.com/@racheltho/why-you-yes-you-should-blog-7d2544ac1045).
+
+## Table Of Contents
+
+<!--ts-->
+
+- [al-folio](#al-folio)
+  - [Getting started](#getting-started)
+  - [Table Of Contents](#table-of-contents)
+  - [Installing and Deploying](#installing-and-deploying)
+  - [Customizing](#customizing)
+  - [Plugin Ecosystem](#plugin-ecosystem)
+  - [Using AI Agents](#using-ai-agents)
+    - [Codex](#codex)
+    - [Claude](#claude)
+    - [Copilot And Other Agents](#copilot-and-other-agents)
+  - [Documentation](#documentation)
+  - [Features](#features)
+    - [Light and dark mode](#light-and-dark-mode)
+    - [The pages you get out of the box](#the-pages-you-get-out-of-the-box)
+    - [Writing](#writing)
+    - [GitHub repositories and stats](#github-repositories-and-stats)
+  - [User community](#user-community)
+  - [Lighthouse PageSpeed Insights](#lighthouse-pagespeed-insights)
+    - [Desktop](#desktop)
+    - [Mobile](#mobile)
+  - [FAQ](#faq)
+  - [Contributing](#contributing)
+    - [Code quality checks](#code-quality-checks)
+    - [Maintainers](#maintainers)
+    - [All Contributors](#all-contributors)
+  - [Star History](#star-history)
+  - [License](#license)
+
+<!--te-->
+
+## Installing and Deploying
+
+For installation and deployment details please refer to [docs/INSTALL.md](docs/INSTALL.md).
+
+## Customizing
+
+For customization details please refer to [docs/CUSTOMIZE.md](docs/CUSTOMIZE.md).
+
+## Plugin Ecosystem
+
+`al-folio` is a thin starter in `v1.x`. Runtime features are plugin-owned and published as Ruby gems.
+
+- Ownership boundaries: [docs/BOUNDARIES.md](docs/BOUNDARIES.md)
+- Plugin catalog metadata: [`_data/featured_plugins.yml`](_data/featured_plugins.yml)
+- Rendered plugin catalog: [alshedivat.github.io/al-folio/plugins/](https://alshedivat.github.io/al-folio/plugins/)
+- Plugin catalog page source: [`_pages/plugins.md`](_pages/plugins.md)
+
+The catalog page is deliberately kept out of the navbar (`nav: false`) so the demo site's chrome stays unchanged; reach it through the links above.
+
+Naming convention:
+
+- Theme-coupled plugins use `al-folio-<feature>` repos and `al_folio_<feature>` gem/plugin ids.
+- Reusable plugins can use `al-<feature>` or neutral naming.
+
+Featured plugins and bundled starter plugins are different tracks. Bundling requires explicit updates to [Gemfile](Gemfile) and [\_config.yml](_config.yml).
+Plugin-owned changes should be made in the owning `al-org-dev` plugin repository, not by copying runtime assets into this starter.
+The bundled v1 plugin repos are:
+
+- [`al-folio-core`](https://github.com/al-org-dev/al-folio-core): shared layouts, includes, style/runtime primitives, and upgrade contracts
+- [`al-folio-cv`](https://github.com/al-org-dev/al-folio-cv): CV rendering
+- [`al-folio-distill`](https://github.com/al-org-dev/al-folio-distill): Distill layouts and runtime assets
+- [`al-folio-bootstrap-compat`](https://github.com/al-org-dev/al-folio-bootstrap-compat): temporary Bootstrap compatibility runtime
+- [`al-folio-upgrade`](https://github.com/al-org-dev/al-folio-upgrade): v1 upgrade audit/report/codemods
+- [`al-icons`](https://github.com/al-org-dev/al-icons): icon loading
+- [`al-search`](https://github.com/al-org-dev/al-search): search runtime
+- [`al-citations`](https://github.com/al-org-dev/al-citations): publication/citation helpers
+- [`al-ext-posts`](https://github.com/al-org-dev/al-ext-posts): external post ingestion
+- [`al-analytics`](https://github.com/al-org-dev/al-analytics), [`al-comments`](https://github.com/al-org-dev/al-comments), [`al-cookie`](https://github.com/al-org-dev/al-cookie), [`al-img-tools`](https://github.com/al-org-dev/al-img-tools), [`al-math`](https://github.com/al-org-dev/al-math), [`al-charts`](https://github.com/al-org-dev/al-charts), and [`al-newsletter`](https://github.com/al-org-dev/al-newsletter): feature-specific runtime and integration behavior
+
+## Using AI Agents
+
+`al-folio` v1.x is designed for agent-assisted setup and migration. Agents should read [AGENTS.md](AGENTS.md) first, then use [docs/BOUNDARIES.md](docs/BOUNDARIES.md) to route changes to the starter or the owning plugin repo.
+
+For existing customized forks, the recommended migration path is to ask an agent to use the [al-folio v1 migration skill](.agents/skills/al-folio-v1-migration/SKILL.md). The skill walks through creating a disposable migration branch, bringing site-owned content/config/data onto the v1 starter contract, running `al_folio_upgrade`, auditing local overrides, and validating the build. This is preferred over a manual file-by-file upgrade because v1 runtime ownership moved into plugins and local overrides need explicit drift tracking.
+
+The canonical skills live in [.agents/skills/](.agents/skills/). They are also exposed through `.codex/skills/` and `.claude/skills/` symlinks for agents that discover skills from tool-specific directories.
+
+### Codex
+
+Codex can use the repo-local skills:
+
+- [al-folio bootstrap](.agents/skills/al-folio-bootstrap/SKILL.md): create and configure a new v1 site.
+- [al-folio v1 migration](.agents/skills/al-folio-v1-migration/SKILL.md): migrate customized forks and audit local overrides.
+
+Useful first prompts:
+
+- "Use the al-folio bootstrap skill to configure my new site."
+- "Use the al-folio v1 migration skill to migrate this customized fork and run the override audit."
+
+### Claude
+
+Claude should start from [CLAUDE.md](CLAUDE.md), which imports [AGENTS.md](AGENTS.md). For setup or migration tasks, use the matching skill from `.claude/skills/`, which points to the canonical `.agents/skills/` directory.
+
+### Copilot And Other Agents
+
+Copilot should follow [.github/copilot-instructions.md](.github/copilot-instructions.md) and the specialized agents in [.github/agents/](.github/agents/). Other agents should follow the same rule: keep starter work in this repo, route runtime behavior to the owning `al-org-dev` plugin, and run `bundle exec al-folio upgrade overrides audit` whenever local overrides are added or retained.
+
+## Documentation
+
+Comprehensive guides for all aspects of your al-folio website:
+
+- **[Documentation index](docs/README.md)** – All user, maintainer, and migration guides
+- **[Quick Start](docs/QUICKSTART.md)** – Get running in 5 minutes
+- **[Installation & Deployment](docs/INSTALL.md)** – Set up your site on GitHub Pages or other platforms
+- **[Customization Guide](docs/CUSTOMIZE.md)** – Personalize your website (CVs, publications, themes, etc.)
+- **[Troubleshooting](docs/TROUBLESHOOTING.md)** – Fix common issues (deployment, build, styling, content)
+- **[FAQ](docs/FAQ.md)** – Frequently asked questions and solutions
+- **[Analytics](docs/ANALYTICS.md)** – Add website analytics and visitor tracking
+- **[SEO Guide](docs/SEO.md)** – Optimize for search engines and improve discoverability
+- **[Plugin Catalog](https://alshedivat.github.io/al-folio/plugins/)** – Featured and bundled plugin metadata ([page source](_pages/plugins.md))
 
 ## Features
 
-### Design
-- **Source Serif 4 + DM Sans** typography — elegant serif headings paired with a clean geometric sans body, self-hosted (no Google Fonts requests)
-- **Warm parchment palette** with subtle noise texture for depth, not flat generic whites
-- **Dark mode** — toggle in navbar, auto-detects system preference, persists across visits
-- **Frosted glass navbar** with backdrop blur, active page indicator, and scroll shadow
-- **Dynamic favicon** — SVG generated from your initials + accent color; ICO and Apple touch icon rasterized from it at deploy time
-- **Responsive** — CSS Grid layouts that adapt from desktop to tablet to mobile
-- **Print stylesheet** — printing or saving a page as PDF gives white paper, no navigation, and references with their DOI/arXiv URLs spelled out
+Everything below ships with the starter. Rows marked **setup** render nothing until you supply a key, ID or credential — bundling a plugin is not the same as switching the feature on. Each feature is owned by a versioned plugin — see [`docs/BOUNDARIES.md`](docs/BOUNDARIES.md) for the full ownership table, and [Plugin Ecosystem](#plugin-ecosystem) for how to add or remove one.
 
-### Interactions
-- **Site-wide search** — press `Cmd+K` (or `Ctrl+K`) to instantly search all pages
-- **Copy BibTeX** — hover any bibtex block to reveal a one-click copy button
-- **Animated link underlines** — smooth gradient underlines that grow on hover
-- **Card hover effects** — lift + shadow on team cards, research cards, and profile photo
-- **Image zoom** — subtle scale on hover for team photos, research thumbnails, and the banner
-- **Back-to-top button** — appears on scroll, smooth scrolls up
-- **Smooth expand/collapse** — CSS transitions on publication abstracts and BibTeX entries
+| Feature                                                                         | Plugin                           | Configure                                                                           |
+| ------------------------------------------------------------------------------- | -------------------------------- | ----------------------------------------------------------------------------------- |
+| Pages, layouts, navigation, light/dark mode, theming                            | `al_folio_core`                  | [Changing theme color](docs/CUSTOMIZE.md#changing-theme-color)                      |
+| Publications from BibTeX                                                        | `al_folio_core` + jekyll-scholar | [Adding a new publication](docs/CUSTOMIZE.md#adding-a-new-publication)              |
+| CV from RenderCV or JSONResume                                                  | `al_folio_cv`                    | [Modifying the CV information](docs/CUSTOMIZE.md#modifying-the-cv-information)      |
+| Distill-style posts                                                             | `al_folio_distill`               | [the example post](https://alshedivat.github.io/al-folio/blog/2021/distill/)        |
+| Math, TikZ diagrams                                                             | `al_math`                        | [the math post](https://alshedivat.github.io/al-folio/blog/2015/math/)              |
+| Charts, mermaid, plotly                                                         | `al_charts`                      | [the charts post](https://alshedivat.github.io/al-folio/blog/2025/plotly/)          |
+| Image zoom, galleries, sliders, lightbox                                        | `al_img_tools`                   | [the images post](https://alshedivat.github.io/al-folio/blog/2024/advanced-images/) |
+| Full-text search (<kbd>ctrl</kbd> <kbd>k</kbd>)                                 | `al_search`                      | `search_enabled` in [\_config.yml](_config.yml)                                     |
+| Comments (Giscus or Disqus) — **setup**                                         | `al_comments`                    | `giscus:` in [\_config.yml](_config.yml)                                            |
+| Analytics — Google, Cronitor, Pirsch, Openpanel, Cloudflare, Simple — **setup** | `al_analytics`                   | [docs/ANALYTICS.md](docs/ANALYTICS.md)                                              |
+| GDPR cookie consent, gating analytics until opt-in — **setup**                  | `al_cookie`                      | [GDPR Cookie Consent Dialog](docs/CUSTOMIZE.md#gdpr-cookie-consent-dialog)          |
+| Newsletter signup — **setup**                                                   | `al_newsletter`                  | `newsletter:` in [\_config.yml](_config.yml)                                        |
+| Citation counts, altmetric/dimensions badges                                    | `al_citations`                   | [Adding a new publication](docs/CUSTOMIZE.md#adding-a-new-publication)              |
+| FontAwesome, Academicons, scholar icons                                         | `al_icons`                       | `third_party_libraries` in [\_config.yml](_config.yml)                              |
+| Posts syndicated from Medium and other feeds                                    | `al_ext_posts`                   | `external_sources:` in [\_config.yml](_config.yml)                                  |
+| Legacy Bootstrap markup (opt-in, removed in v2.0)                               | `al_folio_bootstrap_compat`      | `al_folio.compat.bootstrap` in [\_config.yml](_config.yml)                          |
+| Upgrade audits and codemods                                                     | `al_folio_upgrade`               | `bundle exec al-folio upgrade audit`                                                |
 
-### Publications
-- **Auto-generated from BibTeX** via Jekyll Scholar — just edit `assets/ref.bib`
-- **Search bar** — filter publications by title, author, or year
-- **Year badges** — small accent-colored pills for quick scanning
-- **Pill buttons** — PDF, DOI, arXiv, Link, Code, Slides, Video, Poster, Data, BIB, Abstract, all driven by BibTeX fields
-- **Selected publications** on the home page — add `selected={true}` to an entry
+Also included: Open Graph and schema.org previews, an Atom feed at `/feed.xml`, related posts, tabbed content, typograms, responsive image generation, and a Google Scholar citation-refresh workflow.
 
-### For New Users
-- **Interactive setup script** — `./setup.sh` fills in your name, title, and institution; `./setup.sh --clean` also strips the demo content
-- **Talks, teaching, and software as data** — edit a YAML list, not HTML
-- **5-step `_config.yml`** — numbered sections with inline comments guide you through setup
-- **Well-commented data files** — every field in `_data/*.yml` is explained with examples
-- **Analytics, your choice** — Google Analytics, Plausible, Umami, or GoatCounter, each a one-line setting
-- **Smart link handling** — empty links in config are automatically hidden (no broken icons)
+### Light and dark mode
 
-### Technical
-- **Modular SASS** — organized into `base/`, `components/`, `layouts/`, `utilities/`
-- **No third-party requests** — fonts and icons are served from your own site; the only external script is MathJax, and only on pages that opt in
-- **Selective Bootstrap 5.3.8 SCSS** — navbar, reboot and utilities only; no Bootstrap JavaScript, no jQuery
-- **Single dependency-free JS file** — dark mode, search, toggles, scroll effects, copy button
-- **Auto-generated sitemap** via `jekyll-sitemap`
-- **Reproducible builds** — `Gemfile.lock` is committed, so your site builds the same way next year
-- **CI on pull requests** — every PR is built and its internal links are checked
-- **Open Graph + Twitter Cards** — links look good when shared on social media
-- **MathJax 4** — add `math: true` to a page or post (or set it site-wide in `_config.yml`)
+The theme follows the visitor's system preference and can be toggled with the sun/moon control in the navbar. The choice persists across visits.
 
-## How it compares
-
-The usual alternatives are [academicpages](https://github.com/academicpages/academicpages.github.io), [al-folio](https://github.com/alshedivat/al-folio) and [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes). Measured on each project's demo home page on 2026-10-25 (Lighthouse 12.8, desktop preset):
-
-| | This template | academicpages | al-folio | Minimal Mistakes |
-|---|---:|---:|---:|---:|
-| Page weight | 375 KB | 898 KB | 902 KB | 404 KB |
-| JavaScript | 3 KB | 294 KB | 456 KB | 42 KB |
-| Third-party servers contacted | 0 | 1 | 12 | 1 |
-| Lighthouse accessibility | 100 | 96 | 92 | 100 |
-
-Minimal Mistakes was measured with its demo's ads and analytics blocked, since they are not part of the theme. Five of al-folio's twelve servers serve the Altmetric and Dimensions badges its demo enables.
-
-**Choose this template** if you run a research group (team and alumni pages, news, grants, talks, teaching and software, each from a YAML file), want publications rendered straight from a BibTeX file, or want a site that sends nothing about your visitors to font or script CDNs.
-
-**Choose academicpages** if you prefer one Markdown file per publication and talk (its Python scripts generate them from a TSV or BibTeX file), or want its talk map and portfolio section.
-
-**Choose al-folio** if you want a CV page generated from RenderCV or JSON Resume, Jupyter notebooks and Distill-style posts, Altmetric and Dimensions badges, automatic Google Scholar citation counts, or its larger plugin ecosystem.
-
-**Choose Minimal Mistakes** if you want a general-purpose theme installed as a gem, with skins, many layouts and comment systems. It has no publication list or team page built in.
-
-## Screenshots
-
-| | |
-|:---:|:---:|
-| ![Publications](images/screenshots/publications.webp) | ![Team](images/screenshots/team.webp) |
-| Publications: filter box, year badges, buttons from BibTeX fields | Team page with card grid (dark mode) |
-| ![Search](images/screenshots/search.webp) | |
-| Site-wide search (Cmd+K) | |
-
-## Quick Start
-
-1. Click **[Use this template](https://github.com/sbryngelson/academic-website-template/generate)** and name the new repository `YOUR_USERNAME.github.io`
-   (prefer this over forking: you get a clean history, no upstream baggage, and the option to keep it private)
-2. **Install** Ruby and Bundler ([Jekyll's guide](https://jekyllrb.com/docs/installation/) covers it), then run `bundle install`
-3. **Configure** your site:
-   ```bash
-   ./setup.sh --clean  # remove the demo content and fill in your details, or
-   ./setup.sh          # keep the demo content as examples, or
-   vim _config.yml     # edit Steps 1-5 directly
-   ```
-4. **Add your publications** to `assets/ref.bib`
-5. **Customize** data files in `_data/` (team members, news, awards, etc.)
-6. **Preview** your site:
-   ```bash
-   bundle exec jekyll serve
-   # open http://localhost:4000
-   ```
-7. **Deploy**: push to GitHub, then once, in your repo, set **Settings > Pages > Source** to **GitHub Actions**. Every later push deploys automatically.
-
-## Detailed How-To Guide
-
-### Step 1: Create Your Repository
-
-Click **[Use this template](https://github.com/sbryngelson/academic-website-template/generate)** on GitHub and name the new repository `YOUR_USERNAME.github.io`. Then clone it:
-
-```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_USERNAME.github.io.git
-cd YOUR_USERNAME.github.io
-```
-
-
-### Step 2: Install Dependencies
-
-You need Ruby (3.2 or newer; the deploy workflow uses 4.0) and Bundler. See [Jekyll's installation guide](https://jekyllrb.com/docs/installation/).
-
-```bash
-bundle install
-```
-
-### Step 3: Configure Your Identity
-
-Open `_config.yml` and fill in your information. The file is organized into numbered steps:
-
-```yaml
-# STEP 1: Your Identity
-name: "Jane Smith"
-title: "Assistant Professor of Computer Science"
-institution: "Stanford University"
-email: jsmith@stanford.edu
-photo: headshot.jpg   # place your photo in images/
-```
-
-Or run the interactive setup script:
-
-```bash
-./setup.sh          # prompts for name, title, institution, email
-./setup.sh --clean  # same, after removing the demo content
-```
-
-`--clean` asks for confirmation, then empties the data files (keeping their field comments), `assets/ref.bib`, `_posts/`, `papers/`, the demo team and research images, and the Feynman prose in `home.md`, `research.md`, and `team.md`, and points `photo` at a placeholder avatar.
-
-### Step 4: Add Your Links
-
-Still in `_config.yml`, add your academic profiles. Leave blank (or delete) any you don't use:
-
-```yaml
-# STEP 2: Your Links
-links:
-  google_scholar: "https://scholar.google.com/citations?user=YOUR_ID"
-  github: "https://github.com/yourusername"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
-  cv: "papers/cv.pdf"        # place your CV in the papers/ directory
-  twitter: ""                # leave blank to hide
-  linkedin: ""
-```
-
-### Step 5: Add Your Photo
-
-Place your profile photo in the `images/` directory. Update the `photo` field in `_config.yml` to match the filename.
-
-### Step 6: Add Publications
-
-Edit `assets/ref.bib` with your BibTeX entries. The publications page is auto-generated. Example:
-
-```bibtex
-@article{smith2024,
-  author = {Smith, Jane and Doe, John},
-  title = {A Novel Approach to Machine Learning},
-  journal = {Nature},
-  year = {2024},
-  volume = {42},
-  pages = {1--10},
-  doi = {10.1234/example},
-  arxiv = {2401.01234},
-  code = {https://github.com/jsmith/novel-approach},
-  file = {smith2024.pdf},       % place PDF in papers/
-  selected = {true},            % also show on the home page
-  abstract = {We present...}
-}
-```
-
-Every link is a BibTeX field; use the ones you have:
-
-| Field | Button |
-|-------|--------|
-| `file` | PDF (file in `papers/`) |
-| `doi`, `arxiv`, `url` | DOI, arXiv, Link |
-| `code`, `slides`, `video`, `poster`, `data` | Code, Slides, Video, Poster, Data |
-| `abstract` | Abstract (expandable) |
-| `selected = {true}` | Listed under "Selected publications" on the home page |
-
-Your name is bolded automatically in the publication list. Set it in `_config.yml` exactly as it appears in the rendered list (`Last, F. M.`), longest form first:
-
-```yaml
-scholar:
-  last_name: Smith
-  first_name: ["J. A.", "J."]
-```
-
-### Step 7: Add Team Members
-
-Edit `_data/team_members.yml`:
-
-```yaml
-- name: Alice Johnson
-  photo: alice.jpg          # place in images/ or images/team/
-  info: PhD Student, started Fall 2023
-  email: alice@university.edu
-  website: https://alice.dev
-  github: https://github.com/alice
-```
-
-### Step 8: Add News
-
-Edit `_data/news.yml` (newest first):
-
-```yaml
-- date: 15 March, 2024
-  headline: "Our paper on X was accepted to NeurIPS!"
-
-- date: 1 January, 2024
-  headline: "Welcome to new PhD student Alice Johnson"
-```
-
-### Step 9: Customize Pages
-
-Each page in `_pages/` is a Markdown file. Edit the content directly:
-
-- `home.md` — your welcome text and bio (see [Home page building blocks](#home-page-building-blocks))
-- `research.md` — describe your research areas
-- `about.md` — optional sections (grants, awards, sponsors) driven by `_data/`
-- `team.md` — the openings note and administrative contact
-
-Talks, teaching, and software are lists in `_data/` (see below); their pages need no editing.
-
-To remove a page from the navbar, comment it out in `_config.yml`:
-
-```yaml
-nav_pages:
-  - name: about
-  - name: publications
-    label: Papers        # optional: navbar text (URL stays /publications)
-  # - name: talks        # hidden from navbar
-  - name: research
-```
-
-Blog posts live in `_posts/` and are published at `/blog/<year>/<title>/`.
-
-### Step 10: Preview and Deploy
-
-```bash
-# Preview locally
-bundle exec jekyll serve
-# Visit http://localhost:4000
-
-# When ready, push to GitHub
-git add -A
-git commit -m "My academic website"
-git push
-```
-
-A GitHub Actions workflow automatically builds and deploys your site on every push. Make sure to go to **Settings > Pages > Source** in your repo and select **GitHub Actions**.
-
-Your site will be live at `https://YOUR_USERNAME.github.io` within a few minutes.
+<p align="center">
+<img src="readme_preview/light.png" width=400>
+<img src="readme_preview/dark.png" width=400>
+</p>
 
 ---
 
-## Customization
+### The pages you get out of the box
 
-### _config.yml
+Publications are generated from your BibTeX bibliography, the CV from a single `cv.yml` or `resume.json`, and the people page from `_data`. Everything is content-driven — you edit data files, not templates.
 
-The config file is organized into 5 numbered steps:
+<p align="center">
+  <a href="https://alshedivat.github.io/al-folio/publications/"><img src="readme_preview/publications.png" width=400></a>
+  <a href="https://alshedivat.github.io/al-folio/cv/"><img src="readme_preview/cv.png" width=400></a>
+</p>
+<p align="center">
+  <a href="https://alshedivat.github.io/al-folio/projects/"><img src="readme_preview/projects.png" width=400></a>
+  <a href="https://alshedivat.github.io/al-folio/people/"><img src="readme_preview/people.png" width=400></a>
+</p>
 
-| Step | Section | What to fill in |
-|------|---------|-----------------|
-| 1 | **Your Identity** | Name, title, institution, email, photo |
-| 2 | **Your Links** | Google Scholar, GitHub, ORCID, Twitter, LinkedIn, CV |
-| 3 | **Site Settings** | Accent color, dark mode, math, analytics (GA4, Plausible, Umami, GoatCounter) |
-| 4 | **Your Pages** | Comment out any pages you don't need |
-| 5 | **Publications** | Your name (for bolding) and Jekyll Scholar options |
+Projects are one of four Jekyll `collections` the starter ships (`news`, `projects`, `books`, `teachings`). You can add your own for courses, talks, or anything else — see [Adding Collections](docs/CUSTOMIZE.md#adding-collections).
 
-### Data Files
+---
 
-| File | Purpose |
-|------|---------|
-| `_data/team_members.yml` | Current students and postdocs |
-| `_data/alumni.yml` | Former lab members |
-| `_data/news.yml` | News items (3 most recent shown on home) |
-| `_data/awards.yml` | Awards and honors |
-| `_data/grants.yml` | Grants and funding |
-| `_data/funders.yml` | Funder logos |
-| `_data/talks.yml` | Invited and contributed talks |
-| `_data/teaching.yml` | Courses |
-| `_data/software.yml` | Software projects |
-| `_data/pi.yml` | Optional: detailed education for About page |
+### Writing
 
-Each file has inline comments explaining every field. Entries marked `# EXAMPLE` should be replaced or deleted.
+Posts support the [distill.pub](https://distill.pub/) layout, MathJax and TikZ, syntax-highlighted code, Jupyter notebooks, charts, image galleries, video and audio embeds.
 
-### Pages
+<p align="center">
+  <a href="https://alshedivat.github.io/al-folio/blog/2021/distill/"><img src="readme_preview/distill.png" width=400></a>
+  <a href="https://alshedivat.github.io/al-folio/blog/2015/math/"><img src="readme_preview/math.png" width=400></a>
+</p>
+<p align="center">
+  <a href="https://alshedivat.github.io/al-folio/blog/2015/code/"><img src="readme_preview/code.png" width=400></a>
+  <a href="https://alshedivat.github.io/al-folio/projects/1_project/"><img src="readme_preview/photos-screenshot.png" width=400></a>
+</p>
 
-All pages are in `_pages/`. Edit the Markdown content directly. Pages use the `page` layout; blog posts use `post`.
+---
 
-### Accent Color & Dark Mode
+### GitHub repositories and stats
 
-Set `accent_color` in `_config.yml` to change the theme color across the entire site (links, buttons, highlights, favicon). Light and dark mode variants are derived from it automatically. Set `dark_mode: false` to disable dark mode entirely.
+The `/repositories/` page renders repository and profile cards via [github-stats-extended](https://github.com/stats-organization/github-stats-extended). Profile trophies via [github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy) are supported but **off by default**, because that project's free public instance is currently disabled — see [docs/CUSTOMIZE.md](docs/CUSTOMIZE.md#why-trophies-are-off-by-default) to self-host and re-enable.
 
-### CSS & JS Customization
+<p align="center">
+  <a href="https://alshedivat.github.io/al-folio/repositories/"><img src="readme_preview/repositories.png" width="75%"></a>
+</p>
 
-The site uses modular SASS in `_sass/`:
+Configure which repositories and profiles appear under [Modifying the user and repository information](docs/CUSTOMIZE.md#modifying-the-user-and-repository-information).
 
-```
-_sass/
-  base/          # variables, fonts, typography, icons, reset
-  components/    # card, chips, navbar, buttons, footer, profile, publication, search
-  layouts/       # home grid, team grid, research grid
-  utilities/     # dark mode, animations, print
-```
+## User community
 
-For JavaScript, edit `assets/js/site.js` directly. There is no build step.
+Academics around the world use **al-folio** for their homepages, blogs, and lab pages, as well as webpages for courses, workshops, conferences, meetups, and more.
 
-### Home page building blocks
+**[Browse the showcase &rarr;](docs/SHOWCASE.md)**
 
-`home.md` uses three optional blocks you can copy, reorder, or delete:
+Want your site listed? Post a request in the _Showcase_ category of [GitHub Discussions](https://github.com/alshedivat/al-folio/discussions) — we review and add entries periodically. Please do not open a pull request for this.
 
-```html
-<!-- Research-area chips (link to /research) -->
-<div class="chip-container" markdown="0">
-<a href="{{ '/research' | relative_url }}" class="chip">Quantum Electrodynamics</a>
-<a href="{{ '/research' | relative_url }}" class="chip">Superfluidity</a>
-</div>
+## Lighthouse PageSpeed Insights
 
-<!-- Callout box: callout-success, callout-warning, or callout-info -->
-<div class="callout callout-success" markdown="0">
-<div class="callout-title">{% include icon.html name="award" class="callout-icon" %} Nobel Prize in Physics, 1965</div>
-<p>One or two sentences.</p>
-</div>
+### Desktop
 
-<!-- Banner image with caption; place the image in images/ -->
-<div class="banner-frame" markdown="0">
-<img src="{{ '/images/banner.webp' | relative_url }}" alt="Describe the image" width="1400" height="449" loading="lazy">
-<div class="banner-caption">Caption text</div>
-</div>
-```
+[![Google Lighthouse PageSpeed Insights](lighthouse_results/desktop/pagespeed.svg)](https://htmlpreview.github.io/?https://github.com/alshedivat/al-folio/blob/main/lighthouse_results/desktop/alshedivat_github_io_al_folio_.html)
 
-### Search
+Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.web.dev/report?url=https%3A%2F%2Falshedivat.github.io%2Fal-folio%2F&form_factor=desktop)
 
-Every page and blog post is indexed for the Cmd+K search at build time. Add `search: false` to a page's front matter to leave it out.
+### Mobile
 
-### Icons
+[![Google Lighthouse PageSpeed Insights](lighthouse_results/mobile/pagespeed.svg)](https://htmlpreview.github.io/?https://github.com/alshedivat/al-folio/blob/main/lighthouse_results/mobile/alshedivat_github_io_al_folio_.html)
 
-Icons are inline SVG symbols in `_includes/icons.svg` (Simple Icons, Lucide, Bootstrap Icons). Use one with:
+Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.web.dev/report?url=https%3A%2F%2Falshedivat.github.io%2Fal-folio%2F&form_factor=mobile)
 
-```liquid
-{% include icon.html name="github" %}
-```
+## FAQ
 
-To add an icon, paste its path data into a new `<symbol id="icon-NAME" viewBox="...">` in that file.
+For frequently asked questions, please refer to [docs/FAQ.md](docs/FAQ.md).
 
-### Math
+## Contributing
 
-MathJax is loaded only where it is needed. Add `math: true` to the front matter of any page or post that contains LaTeX, or set `math: true` in `_config.yml` to load it everywhere.
+Contributions to al-folio are very welcome! Before you get started, please take a look at [the guidelines](docs/CONTRIBUTING.md).
 
-## Publications
+If you would like to improve documentation or fix a minor inconsistency or bug, please feel free to send a PR directly to `main`. For more complex issues/bugs or feature requests, please open an issue using the appropriate template.
 
-Publications are generated from `assets/ref.bib` by [Jekyll Scholar](https://github.com/inukshuk/jekyll-scholar); see [Step 6](#step-6-add-publications) for the supported fields and name bolding.
+### Code quality checks
 
-## Hosting
+CI runs the following on every pull request:
 
-### GitHub Pages
+- [Prettier](https://prettier.io/) — formatting, including Liquid templates
+- [lychee](https://lychee.cli.rs/) — broken links
+- `npm run lint:style-contract` — enforces the thin-starter boundary described in [AGENTS.md](AGENTS.md)
+- the six `test/integration_*.sh` scripts, and Playwright visual-regression checks
 
-Create your repo from this template as `your_username.github.io` and push. A **GitHub Actions workflow** is included (`.github/workflows/deploy.yml`) that automatically builds the site with Jekyll Scholar and deploys to GitHub Pages on every push to `source`.
+[Axe](https://github.com/dequelabs/axe-core) accessibility checks are run manually, because the fixes are not always straightforward for contributors without web development experience.
 
-One-time setup: go to your repo's **Settings > Pages > Source** and select **GitHub Actions** instead of "Deploy from a branch". (GitHub does not let a workflow enable Pages on its own; until you do this, the deploy step will fail with a message saying so.)
+### Maintainers
 
-### Custom Domain
+Our most active contributors are welcome to join the maintainers team. If you are interested, please reach out!
 
-Purchase a domain, enter it under **Settings > Pages > Custom domain**, and configure DNS; the workflow picks up the new URL automatically. See [GitHub's guide](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site). (Sites deployed with GitHub Actions configure the domain in Settings, not with a `CNAME` file.)
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://maruan.alshedivat.com"><img src="https://avatars.githubusercontent.com/u/2126561?v=4" width="100px;" alt=""/><br /><sub><b>Maruan</b></sub></a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://rohandebsarkar.github.io"><img src="https://avatars.githubusercontent.com/u/50144004?v=4" width="100px;" alt=""/><br /><sub><b>Rohan Deb Sarkar</b></sub></a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://amirpourmand.ir"><img src="https://avatars.githubusercontent.com/u/32064808?v=4" width="100px;" alt=""/><br /><sub><b>Amir Pourmand</b></sub></a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://george-gca.github.io/"><img src="https://avatars.githubusercontent.com/u/31376482?v=4" width="100px;" alt=""/><br /><sub><b>George</b></sub></a></td>
+    </tr>
+  </tbody>
+</table>
 
-### Self-Hosting
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
 
-Set `url` (and `baseurl` if the site lives in a sub-path) in `_config.yml`, build with `JEKYLL_ENV=production bundle exec jekyll build`, and upload `_site/` to your server.
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
-## Troubleshooting
+### All Contributors
 
-| Symptom | Cause and fix |
-|---|---|
-| The deploy workflow fails at "Configure Pages" | Pages is not enabled for GitHub Actions yet. Settings > Pages > Source > **GitHub Actions** (one time). |
-| Site builds locally but pages 404 on GitHub | Push to the `source` branch; the workflow only deploys from there. Check the Actions tab for the run. |
-| My name is not bold in the publication list | `scholar.first_name` must match the rendered initials exactly, e.g. `["J. A.", "J."]`, longest form first. |
-| `bundle install` fails on macOS | The system Ruby is too old or read-only. Install Ruby 3.2+ with Homebrew, rbenv, or mise, then rerun. |
-| A page is missing from Cmd+K search | Pages need a `title` in their front matter; `search: false` excludes a page on purpose. |
-| Equations do not render | Add `math: true` to that page's front matter, or `math: true` in `_config.yml`. |
+<a href="https://contrib.rocks">
+  <img src="https://contrib.rocks/image?repo=alshedivat/al-folio&max=500&columns=24" />
+</a>
 
-## Upgrading
+## Star History
 
-Coming from the previous version? See [UPGRADING.md](UPGRADING.md).
+<a href="https://github.com/alshedivat/al-folio/stargazers">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/img/star-history-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/img/star-history-light.svg" />
+    <img alt="Star history chart for alshedivat/al-folio" src="assets/img/star-history-light.svg" width="820" />
+  </picture>
+</a>
 
-## Alternatives
-
-* [al-folio](https://github.com/alshedivat/al-folio)
-* [academicpages](https://academicpages.github.io/)
-* [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/)
+<sub>Generated by [`bin/generate_star_history.py`](bin/generate_star_history.py) and refreshed automatically by [`star-history.yml`](.github/workflows/star-history.yml).</sub>
 
 ## License
 
-MIT
+al-folio is available as open source under the terms of the [MIT License](https://github.com/alshedivat/al-folio/blob/main/LICENSE).
+
+Originally, **al-folio** was based on the [\*folio theme](https://github.com/bogoli/-folio) (published by [Lia Bogoev](https://liabogoev.com) and under the MIT license). Since then, it got a full re-write of the styles and many additional cool features.

@@ -1,0 +1,205 @@
+cv:
+  name: Minh-Hoang Dang
+  label: Postdoctoral Researcher
+  email: minh-hoang.dang@inria.fr
+  location: France
+  image: ""
+  summary: Postdoctoral researcher at Inria (Wimmics team) working on Semantic Web, Knowledge Graphs and LLMs.
+
+  social_networks:
+    - network: GitHub
+      username: mhoangvslev
+    - network: LinkedIn
+      username: minhhoangdang
+
+  sections:
+    Education:
+      - institution: Nantes University
+        area: Computer Science, Semantic Web
+        studyType: PhD
+        start_date: 2021-09
+        end_date: 2024-11
+      - institution: Nantes University
+        area: Computer Science, Data Science
+        studyType: MSc
+        start_date: 2019-09
+        end_date: 2021-07
+
+    Experience:
+      - company: Inria, Wimmics team
+        position: Postdoctoral Researcher
+        start_date: 2026-06
+        end_date: 2029-06
+        summary: Natural Language Based Secure Federated Query Building
+        highlights:
+          - The grounding of LLM in the Knowledge Graph (GraphRAG) helps reduce hallucination in the generated answer.
+          - Develop a federated query builder and end-user interface, coupling generative models with linked data for natural language interaction.
+      - company: JusMundi
+        position: Applied Research and Development Engineer
+        start_date: 2024-11
+        end_date: 2026-05
+        highlights:
+          - Replaced a hard-coded-rules RAG system with a knowledge-graph-based retrieval system using a domain ontology and RDB-to-RDF mappings, achieving comparable performance through graph-based retrieval and embeddings.
+          - Synthetically generated queries from a large corpus of legal documents and used the query-document pairs to fine-tune a long-context embedding model, achieving a 30%pt recall improvement for the Agentic RAG system.
+      - company: Nantes University (LS2N)
+        position: Doctoral Researcher
+        start_date: 2021-09
+        end_date: 2024-11
+        summary: Query the Web as a Knowledge Graph
+        highlights:
+          - Proposed an evaluation pipeline that uses Schema.org ontology and documentation to verify LLMs' output when extracting Knowledge Graphs from Web pages.
+          - Created FedShop, a benchmark testing the scalability of SPARQL federation engines in the number of sources, and a new federation engine that finds better source assignments than existing engines.
+      - company: Visage.jobs
+        position: Intern, e-mail personalisation through data
+        start_date: 2021-02
+        end_date: 2021-07
+        highlights:
+          - Used text similarity metrics (Jaccard, Cosine) to show most users use templates without personalization.
+          - Tagged email sentences with text classification to extract user writing patterns.
+          - Used Association Rule mining to explain the factors that drive candidate engagement.
+      - company: Nantes University
+        position: Intern, attention-based abstractive summarisation on Yale courses
+        start_date: 2020-01
+        end_date: 2020-05
+        highlights:
+          - Proposed improvements for ROUGE, METEOR and human evaluation on educational content.
+      - company: Cogarius
+        position: Intern, data visualisation on blockchain network
+        start_date: 2019-04
+        end_date: 2019-06
+        highlights:
+          - Visualised smart-contract events on Ethereum; prototype web application and graph database.
+      - company: Beuth University of Applied Science
+        position: Intern, data visualisation on traffic network
+        start_date: 2017-04
+        end_date: 2017-06
+        highlights:
+          - Data visualisation on traffic network in Dresden (geo + time).
+
+    Publications:
+      - title: "LLM4SchemaOrg: Generating Schema.org Markups with Large Language Models"
+        authors:
+          - "Minh-Hoang Dang"
+          - "Thi Hoang Thi Pham"
+          - "Pascal Molli"
+          - "Hala Skaf-Molli"
+          - "Alban Gaignard"
+        publisher: "Semantic Web Journal"
+        releaseDate: 2025
+        url: https://doi.org/10.1177/22104968251382172
+      - title: "Querying the Web as a Knowledge Graph"
+        authors:
+          - "Minh-Hoang Dang"
+        publisher: "Nantes Université"
+        releaseDate: 2024
+        url: https://theses.hal.science/tel-04993631/
+      - title: "Fediscount: Shopping Online at a Federated Store Using FedUP as SPARQL Federation Engine"
+        authors:
+          - "Julien Aimonier-Davat"
+          - "Minh-Hoang Dang"
+          - "Pascal Molli"
+          - "Brice Nédelec"
+          - "Hala Skaf-Molli"
+        publisher: "Companion Proceedings of the ACM Web Conference 2024"
+        releaseDate: 2024
+        url: https://doi.org/10.1145/3589335.3651249
+      - title: "FedUP: Querying Large-Scale Federations of SPARQL Endpoints"
+        authors:
+          - "Julien Aimonier-Davat"
+          - "Brice Nédelec"
+          - "Minh-Hoang Dang"
+          - "Pascal Molli"
+          - "Hala Skaf-Molli"
+        publisher: "Proceedings of the ACM on Web Conference 2024"
+        releaseDate: 2024
+        url: https://doi.org/10.1145/3589334.3645704
+      - title: "RAW-JENA: Approximate Query Processing for SPARQL Endpoints"
+        authors:
+          - "Julien Aimonier-Davat"
+          - "Minh-Hoang Dang"
+          - "Pascal Molli"
+          - "Brice Nédelec"
+          - "Hala Skaf-Molli"
+        publisher: "ISWC'23: 22nd International Semantic Web Conference"
+        releaseDate: 2023
+        url: https://hal.science/hal-04250060/
+      - title: "Schema.org: How is it used?"
+        authors:
+          - "Minh-Hoang Dang"
+          - "Alban Gaignard"
+          - "Hala Skaf-Molli"
+          - "Pascal Molli"
+        publisher: "International Semantic Web Conference (ISWC) 2023"
+        releaseDate: 2023
+        url: https://hal.science/hal-04250523/
+      - title: "Join Ordering of SPARQL Property Path Queries"
+        authors:
+          - "Julien Aimonier-Davat"
+          - "Hala Skaf-Molli"
+          - "Pascal Molli"
+          - "Minh-Hoang Dang"
+          - "Brice Nédelec"
+        publisher: "European Semantic Web Conference"
+        releaseDate: 2023
+        url: https://doi.org/10.1007/978-3-031-33455-9_3
+      - title: "Improving Language Model Predictions via Prompts Enriched with Knowledge Graphs"
+        authors:
+          - "Ryan Brate"
+          - "Minh-Hoang Dang"
+          - "Fabian Hopper"
+          - "Yuan He"
+          - "Albert Meroño-Peñuela"
+          - "Vijay Sadashivaiah"
+        publisher: "Zenodo (CERN European Organization for Nuclear Research)"
+        releaseDate: 2023
+        url: https://www.academia.edu/download/108516442/Klingon_DL4KG_3.pdf
+      - title: "DeKaloG: Source Selection for Decentralized Knowledge Graphs"
+        authors:
+          - "Julien Aimonier-Davat"
+          - "Minh Hoang Dang"
+          - "Hala Skaf-Molli"
+          - "Pascal Molli"
+        publisher: "LS2N-Nantes Université"
+        releaseDate: 2023
+        url: https://hal.science/hal-03936036/
+      - title: "FedShop: A Benchmark for Testing the Scalability of SPARQL Federation Engines"
+        authors:
+          - "Minh-Hoang Dang"
+          - "Julien Aimonier-Davat"
+          - "Pascal Molli"
+          - "Olaf Hartig"
+          - "Hala Skaf-Molli"
+          - "Yotlan Le Crom"
+        publisher: "ISWC'23: 22nd International Semantic Web Conference"
+        releaseDate: 2023
+        url: https://doi.org/10.1007/978-3-031-47243-5_16
+
+    Skills:
+      - name: Large Language Models
+        keywords: "LangChain, llama-cpp-python, instructor, Langfuse, Scorecard.io"
+      - name: Databases
+        keywords: "MySQL, PostgreSQL, MongoDB, Spark, GraphDB, Neo4J, Virtuoso, Jena"
+      - name: Development
+        keywords: "Linux, Bash, Docker, CI/CD"
+      - name: Semantic Web
+        keywords: "Protégé, Virtuoso, Jena, RDF4J, Ontop (OBDA), Ontotext GraphDB"
+      - name: Cloud
+        keywords: "Google Cloud Platform, Azure (ML Studio)"
+      - name: Machine Learning
+        keywords: "SentenceTransformers, HuggingFace, PyTorch"
+
+    Languages:
+      - name: English
+        summary: Professional
+      - name: French
+        summary: Bilingual
+      - name: Vietnamese
+        summary: Native
+
+    Certificates:
+      - name: IBM Data Science
+        date: 2024-09-07
+        issuer: IBM (credential VZ6JZRK7L6XG)
+      - name: IBM AI Engineering
+        date: 2024-07-06
+        issuer: IBM (credential LV95FKMTPGHB)
