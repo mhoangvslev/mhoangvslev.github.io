@@ -1,10 +1,7 @@
 cv:
   name: Minh-Hoang Dang
-  label: Postdoctoral Researcher
   email: minh-hoang.dang@inria.fr
   location: France
-  image: ""
-  summary: Postdoctoral researcher at Inria (Wimmics team) working on Semantic Web, Knowledge Graphs and LLMs.
 
   social_networks:
     - network: GitHub
@@ -85,13 +82,13 @@ cv:
           - "Hala Skaf-Molli"
           - "Alban Gaignard"
         publisher: "Semantic Web Journal"
-        releaseDate: 2025
+        releaseDate: "2025"
         url: https://doi.org/10.1177/22104968251382172
       - title: "Querying the Web as a Knowledge Graph"
         authors:
           - "Minh-Hoang Dang"
         publisher: "Nantes Université"
-        releaseDate: 2024
+        releaseDate: "2024"
         url: https://theses.hal.science/tel-04993631/
       - title: "Fediscount: Shopping Online at a Federated Store Using FedUP as SPARQL Federation Engine"
         authors:
@@ -101,7 +98,7 @@ cv:
           - "Brice Nédelec"
           - "Hala Skaf-Molli"
         publisher: "Companion Proceedings of the ACM Web Conference 2024"
-        releaseDate: 2024
+        releaseDate: "2024"
         url: https://doi.org/10.1145/3589335.3651249
       - title: "FedUP: Querying Large-Scale Federations of SPARQL Endpoints"
         authors:
@@ -111,7 +108,7 @@ cv:
           - "Pascal Molli"
           - "Hala Skaf-Molli"
         publisher: "Proceedings of the ACM on Web Conference 2024"
-        releaseDate: 2024
+        releaseDate: "2024"
         url: https://doi.org/10.1145/3589334.3645704
       - title: "RAW-JENA: Approximate Query Processing for SPARQL Endpoints"
         authors:
@@ -121,7 +118,7 @@ cv:
           - "Brice Nédelec"
           - "Hala Skaf-Molli"
         publisher: "ISWC'23: 22nd International Semantic Web Conference"
-        releaseDate: 2023
+        releaseDate: "2023"
         url: https://hal.science/hal-04250060/
       - title: "Schema.org: How is it used?"
         authors:
@@ -130,7 +127,7 @@ cv:
           - "Hala Skaf-Molli"
           - "Pascal Molli"
         publisher: "International Semantic Web Conference (ISWC) 2023"
-        releaseDate: 2023
+        releaseDate: "2023"
         url: https://hal.science/hal-04250523/
       - title: "Join Ordering of SPARQL Property Path Queries"
         authors:
@@ -140,7 +137,7 @@ cv:
           - "Minh-Hoang Dang"
           - "Brice Nédelec"
         publisher: "European Semantic Web Conference"
-        releaseDate: 2023
+        releaseDate: "2023"
         url: https://doi.org/10.1007/978-3-031-33455-9_3
       - title: "Improving Language Model Predictions via Prompts Enriched with Knowledge Graphs"
         authors:
@@ -151,7 +148,7 @@ cv:
           - "Albert Meroño-Peñuela"
           - "Vijay Sadashivaiah"
         publisher: "Zenodo (CERN European Organization for Nuclear Research)"
-        releaseDate: 2023
+        releaseDate: "2023"
         url: https://www.academia.edu/download/108516442/Klingon_DL4KG_3.pdf
       - title: "DeKaloG: Source Selection for Decentralized Knowledge Graphs"
         authors:
@@ -160,7 +157,7 @@ cv:
           - "Hala Skaf-Molli"
           - "Pascal Molli"
         publisher: "LS2N-Nantes Université"
-        releaseDate: 2023
+        releaseDate: "2023"
         url: https://hal.science/hal-03936036/
       - title: "FedShop: A Benchmark for Testing the Scalability of SPARQL Federation Engines"
         authors:
@@ -171,7 +168,7 @@ cv:
           - "Hala Skaf-Molli"
           - "Yotlan Le Crom"
         publisher: "ISWC'23: 22nd International Semantic Web Conference"
-        releaseDate: 2023
+        releaseDate: "2023"
         url: https://doi.org/10.1007/978-3-031-47243-5_16
 
     Skills:
